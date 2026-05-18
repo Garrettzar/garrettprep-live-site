@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>22-Question SAT Math Practice Test | GarrettPrep</title>
+  <meta
+    name="description"
+    content="Take GarrettPrep's free 22-question SAT Math practice test, get a score, and review every answer with explanations."
+  />
+
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="practice.css" />
+</head>
+
+<body>
+  <div class="page">
+    <header class="site-header has-mobile-menu">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="GarrettPrep home">
+          <img src="images/Garrettprep whiteboard logo.png" alt="GarrettPrep logo" />
+          <span>GarrettPrep</span>
+        </a>
+
+        <button
+          class="mobile-nav-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        >
+          &#9776;
+        </button>
+
+        <nav id="primary-navigation" class="nav-links" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="resources.html">Resources</a>
+          <a href="practice.html">Practice Test</a>
+          <a href="summer.html">Schedule</a>
+          <a href="about.html">About</a>
+          <a class="nav-cta" href="book.html">Book Free Consultation</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="practice-main">
+      <section id="start-screen" class="practice-start section">
+        <div class="container">
+          <div class="practice-start-card sketch">
+            <span class="eyebrow">SAT Math Practice</span>
+            <h1>GarrettPrep 22-Question SAT Math Practice Test</h1>
+            <p class="lead">
+              Answer all 22 questions, submit when you&rsquo;re done, then review your score and explanations.
+            </p>
+            <button id="start-test" class="btn btn-primary" type="button">Start Test</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="test-screen" class="practice-test section" hidden>
+        <div class="container practice-layout">
+          <aside class="practice-nav-card card" aria-label="Question navigator">
+            <div class="practice-nav-head">
+              <span class="eyebrow">Questions</span>
+              <p id="answered-count" class="small">0 of 22 answered</p>
+            </div>
+            <div id="question-nav" class="question-nav"></div>
+          </aside>
+
+          <section class="question-card card" aria-live="polite">
+            <div class="question-header">
+              <div>
+                <span class="eyebrow">Question</span>
+                <h1 id="question-title">Question 1</h1>
+              </div>
+              <p id="question-topic" class="topic-pill"></p>
+            </div>
+
+            <figure class="question-media">
+              <img id="question-image" src="" alt="" />
+              <figcaption id="image-warning" class="image-warning" hidden>
+                This question image could not be loaded. Check the image path in practice.js.
+              </figcaption>
+            </figure>
+
+            <div id="answer-area" class="answer-area"></div>
+
+            <div class="practice-actions">
+              <button id="prev-question" class="btn" type="button">Previous</button>
+              <button id="next-question" class="btn" type="button">Next</button>
+              <button id="submit-test" class="btn btn-primary" type="button">Submit Test</button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section id="results-screen" class="practice-results section" hidden>
+        <div class="container results-stack">
+          <section class="score-card-large sketch">
+            <span class="eyebrow">Results</span>
+            <h1 id="score-heading">Score: 0 / 22</h1>
+            <p id="score-percent" class="score-percent">0%</p>
+            <p id="score-message" class="lead"></p>
+          </section>
+
+          <section class="card">
+            <div class="section-header">
+              <span class="eyebrow">Topics</span>
+              <h2>Topic Breakdown</h2>
+            </div>
+            <div id="topic-breakdown" class="topic-breakdown mt-24"></div>
+          </section>
+
+          <section class="review-section">
+            <div class="section-header">
+              <span class="eyebrow">Review</span>
+              <h2>Every Question</h2>
+            </div>
+            <div id="review-list" class="review-list mt-24"></div>
+          </section>
+
+          <section class="results-cta sketch">
+            <h2>Want help fixing your mistakes?</h2>
+            <p class="lead">
+              Book a free SAT game plan call and we&rsquo;ll help you turn this score into a plan.
+            </p>
+            <a class="btn btn-primary" href="book.html">Book Free Call</a>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-copy">
+          <div class="footer-brand">
+            <img src="images/Garrettprep whiteboard logo.png" alt="GarrettPrep logo" />
+            <span>GarrettPrep</span>
+          </div>
+          <p class="mt-18">Local SAT prep in Wayne, NJ.</p>
+          <p class="mt-12">
+            <a href="mailto:garrettprep@gmail.com">garrettprep@gmail.com</a>
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="programs.html">Programs</a>
+          <a href="resources.html">Resources</a>
+          <a href="practice.html">Practice Test</a>
+          <a href="summer.html">Schedule</a>
+          <a href="about.html">About</a>
+          <a href="book.html">Book</a>
+        </nav>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="practice.js"></script>
+</body>
+</html>
